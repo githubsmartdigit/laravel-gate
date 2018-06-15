@@ -1,0 +1,22 @@
+{
+    "name": "xooxx/laravel-gate",
+    "description": "Light laravel gate implementation",
+    "type": "library",
+    "require": {
+      "illuminate/auth": ">=4.2",
+      "illuminate/support": ">=4.2",
+      "illuminate/container": ">=4.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xooxx",
+            "email": "xooxx.dev@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Xooxx\\Laravel\\Access\\": "src/"
+      }
+   }
+}
