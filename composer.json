@@ -3,6 +3,7 @@
     "description": "Light laravel gate implementation",
     "type": "library",
     "require": {
+      "xooxx/json-api": "^1.0",
       "illuminate/auth": ">=4.2",
       "illuminate/support": ">=4.2",
       "illuminate/container": ">=4.2"
