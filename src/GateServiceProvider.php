@@ -39,6 +39,11 @@ abstract class GateServiceProvider extends ServiceProvider
             return new Gate($app, function () use ($app) {
                 /**@var \Illuminate\Auth\Guard $auth */
                 $auth = $app['auth'];
+                
+                if(config('auth.multi.tenant', false)){
+                    return $auth->tenant()->getUser();
+                }
+                
                 return $auth->getUser();
             });
         });
